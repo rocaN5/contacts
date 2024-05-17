@@ -1,0 +1,28 @@
+@import "fonts";
+@import "main";
+
+*{
+    font-family: "Rubik", sans-serif;
+}
+
+*::selection{
+    background: #c70000;
+}
+
+canvas{
+    position: absolute;
+}
+
+body{
+    padding: 0;
+    background-color: #151515;
+    color: #f1f1f1;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
