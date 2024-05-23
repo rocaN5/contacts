@@ -91,3 +91,22 @@ setInterval(() => {
 
 // Начать анимацию
 animate();
+
+// TODO: Qr при наведении мыши ✅
+
+const qr = document.querySelector(".qr");
+const platforms = ["vk", "steam", "github", "telegram", "instagram"];
+
+const setQRImage = (imageUrl, size) => {
+    qr.style.backgroundImage = `url("${imageUrl}")`;
+    qr.style.backgroundSize = size;
+};
+
+platforms.forEach(platform => {
+    const element = document.querySelector(`.${platform}`);
+    const qrUrl = `../img/qr/${platform}-qr.svg`;
+
+    element.addEventListener("mouseenter", () => setQRImage(qrUrl, '100%'));
+    element.addEventListener("touchstart", () => setQRImage(qrUrl, '100%'));
+    element.addEventListener("mouseleave", () => setQRImage('../img/qr.svg', '50%'));
+});

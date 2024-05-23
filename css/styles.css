@@ -190,6 +190,7 @@
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
+  transition: 200ms;
 }
 
 * {
@@ -216,4 +217,4 @@ body {
   align-items: center;
   min-height: 100vh;
   justify-content: center;
-}/*# sourceMappingURL=styles.css.map */
+}
