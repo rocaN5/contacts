@@ -104,7 +104,7 @@ const setQRImage = (imageUrl, size) => {
 
 platforms.forEach(platform => {
     const element = document.querySelector(`.${platform}`);
-    const qrUrl = `../img/qr/${platform}-qr.svg`;
+    const qrUrl = `img/qr/${platform}-qr.svg`;
 
     element.addEventListener("mouseenter", () => setQRImage(qrUrl, '100%'));
     element.addEventListener("touchstart", () => setQRImage(qrUrl, '100%'));
