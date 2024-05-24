@@ -108,5 +108,5 @@ platforms.forEach(platform => {
 
     element.addEventListener("mouseenter", () => setQRImage(qrUrl, '100%'));
     element.addEventListener("touchstart", () => setQRImage(qrUrl, '100%'));
-    element.addEventListener("mouseleave", () => setQRImage('../img/qr.svg', '50%'));
+    element.addEventListener("mouseleave", () => setQRImage('img/qr.svg', '50%'));
 });
