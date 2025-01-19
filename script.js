@@ -95,7 +95,7 @@ animate();
 // TODO: Qr при наведении мыши ✅
 
 const qr = document.querySelector(".qr");
-const platforms = ["vk", "steam", "github", "telegram", "instagram"];
+const platforms = ["steam", "github", "telegram"];
 
 const setQRImage = (imageUrl, size) => {
     qr.style.backgroundImage = `url("${imageUrl}")`;

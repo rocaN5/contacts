@@ -203,6 +203,7 @@
 
 canvas {
   position: absolute;
+  background: linear-gradient(15deg, #000000, #292929);
 }
 
 body {
@@ -217,4 +218,4 @@ body {
   align-items: center;
   min-height: 100vh;
   justify-content: center;
-}
+}/*# sourceMappingURL=styles.css.map */
